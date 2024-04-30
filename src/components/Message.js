@@ -4,7 +4,7 @@ import {
   UsernameContainer
 } from "./StyledMessage";
 
-export function Message(props) {
+function Message(props) {
   const onDoubleClick = () => {
     if (window.confirm("Tem certeza que deseja deletar essa mensagem?")) {
       props.deleteMessages(props.message);
@@ -31,3 +31,5 @@ export function Message(props) {
     </MessageContainer>
   );
 }
+
+export default Message
